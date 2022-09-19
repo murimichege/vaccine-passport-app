@@ -15,6 +15,7 @@ axiosClient.interceptors.request.use(async (config) => {
         headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
+            'withCredentials': 'true',
             'Authorization': `Bearer ${getToken()}`,
         }
     }
