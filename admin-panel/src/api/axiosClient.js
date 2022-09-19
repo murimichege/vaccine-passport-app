@@ -1,7 +1,7 @@
 import axios from "axios"
 import queryString from 'query-string'
 
-const baseUrl = 'https://vaccine-passport-app-backend.vercel.app/'
+const baseUrl = 'https://vaccine-passport-app-backend.vercel.app:5000'
 const getToken = () => localStorage.getItem('token')
 
 const axiosClient = axios.create({
