@@ -19,6 +19,7 @@ const Login = () => {
         const checkToken = async () => {
             const res = await isAuthenticated()
             if (res) return navigate('/')
+            console.log("+++++++++++++++++++++" + res)
         }
         checkToken()
     }, [])
