@@ -11,7 +11,7 @@ app.use(cors());
 const app = express();
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true)
-    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Origin', 'https://vaccine-passport-app.vercel.app/')
     // another common pattern
     // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
