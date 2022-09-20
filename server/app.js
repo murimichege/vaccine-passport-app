@@ -4,12 +4,13 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const cors = require('cors');
+
 const appRoute = require('./src/routes');
-// app.use(cors());
+const cors = require('cors');
+ app.use(cors());
 
 const app = express();
-app.use(cors({ origin: "https://vaccine-passport-app.vercel.app/", credentials: true }))
+// app.use(cors({ origin: "https://vaccine-passport-app.vercel.app/", credentials: true }))
 app.use(function(req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "*")
     res.setHeader("Access-Control-Allow-Credentials", "true");
