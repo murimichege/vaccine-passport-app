@@ -13,7 +13,7 @@ const axiosClient = axios.create({
 axiosClient.interceptors.request.use(async (config) => {
     return {
         ...config,
-        withCredentials: true,
+        // withCredentials: true,
         // crossdomain: true, 
         // credentials: 'same-origin',
         headers: {
