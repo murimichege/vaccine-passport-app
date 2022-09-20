@@ -19,9 +19,8 @@ axiosClient.interceptors.request.use(async (config) => {
         headers: {
             'Content-Type': 'application/json',
             // 'Access-Control-Allow-Origin': 'https://vaccine-passport-app-backend.vercel.app',
-            'Access-Control-Allow-Methods': '*',
-            'Access-Control-Allow-Headers': '*',
-            'crossDomain': 'true',
+           
+            // 'crossDomain': 'true',
             'Authorization': `Bearer ${getToken()}`,
         }
     }
