@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
     next();
   });
 
-// app.use(cors({ origin: "https://vaccine-passport-app-backend.vercel.app", credentials: true }))
+app.use(cors({ origin: "https://vaccine-passport-app.vercel.app/", credentials: true }))
 // console.log("+++++++++++success" )
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "*");
