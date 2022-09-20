@@ -15,10 +15,10 @@ axiosClient.interceptors.request.use(async (config) => {
         ...config,
         // withCredentials: true,
         // crossdomain: true, 
-        // credentials: 'same-origin',
+         credentials: 'same-origin',
         headers: {
             'Content-Type': 'application/json',
-            // 'Access-Control-Allow-Origin': 'https://vaccine-passport-app-backend.vercel.app',
+             'Access-Control-Allow-Origin': 'https://vaccine-passport-app-backend.vercel.app',
            
             // 'crossDomain': 'true',
             'Authorization': `Bearer ${getToken()}`,
